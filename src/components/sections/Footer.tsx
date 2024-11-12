@@ -1,17 +1,17 @@
-import LogoBranca from '@/assets/logo-branca.png'
-import LogoVivoEmpresas from '@/assets/LogoVivo.svg'
+import LogoBranca from '@/assets/ConectaBranca.svg'
+import LogoVivoEmpresas from '@/assets/ClaroEmpresas.webp'
 
 export default function Footer ({ id }: { id: string }){
 
   return(
     <>
-    <footer id={id} className="bg-purple-950 font-inter md:px-32 flex-col flex justify-between items-center w-full py-10 px-10 h-fit min-h-44">
+    <footer id={id} className="bg-claroVermelho font-inter md:px-32 flex-col flex justify-between items-center w-full py-10 px-10 h-fit min-h-44">
       <div className='lg:flex-row flex-col flex gap-12 items-center justify-between w-full' >
   
         <div className='flex flex-col justify-between lg:flex-row gap-8 w-full'>
 
-        <div className='flex-col gap flex justify-center items-center'>
-            <img className='w-48' src={LogoBranca} alt="Logo da SmartLagos branca" />
+        <div className='flex-col gap-1 flex justify-center items-center'>
+            <img className='w-fit' src={LogoBranca} alt="Logo da SmartLagos branca" />
             <div className='flex flex-row justify-center items-center space-x-1'>
               <p className='text-white' >Parceiro autorizado</p>
               <img className='w-12' src={LogoVivoEmpresas} alt="Logo da Vivo para empresas autorizadas" />
@@ -59,7 +59,7 @@ export default function Footer ({ id }: { id: string }){
         </div>
       </div>
     </footer>    
-    <div className='w-full bg-purple-950 border-t-[1px] border-gray-400 text-white h-fit py-1 flex md:flex-row flex-col md:gap-3 gap-1 justify-center items-center'>
+    <div className='w-full bg-claroVermelho border-t-[1px] border-gray-400 text-white h-fit py-1 flex md:flex-row flex-col md:gap-3 gap-1 justify-center items-center'>
         <p className='opacity-60'>Made by WR Digital</p>
         <p className='opacity-60'>Developed by <a className='hover:opacity-100 opacity-80 transition-all' target='_blank' href="https://www.behance.net/jeovanjnior/projects">Jeovan Lindo</a></p>
     </div>

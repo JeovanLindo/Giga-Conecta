@@ -1,4 +1,4 @@
-import VivoPricesFibra from '@/lib/vivopricesfibra'
+import PricesFibra from '@/lib/pricesfibra'
 import { cn } from '@/lib/utils';
 
 import {Wifi} from 'lucide-react'
@@ -12,9 +12,10 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Button } from './button';
 
 
-const teste = VivoPricesFibra.map((price)=> {
+const teste = PricesFibra.map((price)=> {
   return {
     plano: price.Plano,
     megas: price.Megas,
@@ -60,7 +61,7 @@ export function CardNavFibra() {
         {teste.map((teste1)=>(
           <SwiperSlide className='cursor-grab active:cursor-grabbing w-fit h-fit flex flex-row justify-center mb-10 items-center'
           key={teste1.megas}>
-            <div className='flex flex-col h-72 justify-between items-center border border-black gap-6 rounded-md w-full p-5'>
+            <div className='flex flex-col h-fit justify-between items-center border border-black gap-14 rounded-md w-full p-5'>
               <div className='flex gap-3 w-full flex-col'>
                   <p className='text-xs'>
                     {teste1.plano}
@@ -75,10 +76,16 @@ export function CardNavFibra() {
                     <Wifi/> {teste1.megas} GB
                   </p>
               </div>
-              <p className='text-lg justify-center w-full border-y border-black py-1'>R$ {teste1.preco}/Mês</p>
-              <a target='_blank' href={`https://wa.me/5521995322025?text=Ol%C3%A1,%20quero%20ser%20um%20cliente%20da%20SmartLagos%20e%20me%20interessei%20pela%20${teste1.plano}%20de%20${teste1.megas}%20${cn(teste1.bytes === 'Megas' ? 'megas' : 'giga')}`} className='focus:bg-fuchsia-600 hover:bg-fuchsia-600 transition-all bg-fuchsia-700 w-full flex justify-center items-center rounded active:bg-fuchsia-900' >
-                <p className='text-white text-md p-1' >Assine já!</p>
-              </a>
+
+              <p className='border-y border-black w-full py-1 text-center'>Apps ilimitados</p>
+
+              <div className='flex w-full flex-col'>
+                <p className='text-sm'>Po apenas:</p>
+                <p className='text-lg justify-center w-full'>R$ {teste1.preco}/Mês</p>
+              </div>
+              <Button className='w-full'>
+                <a href="">Contratar serviço fibra</a>
+              </Button>
             </div>
               
           </SwiperSlide>

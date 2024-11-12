@@ -1,14 +1,14 @@
-import { HandCoins, Headset, Rocket, Split, Sprout, UserCog } from "lucide-react"
+import { Headset, Plane, Rocket, Shield, Split, UserCog } from "lucide-react"
 
 const Beneficios = [
 {
-  titulo:'100% Fibra',
-  descricao:'A melhor conexão banda larga!',
+  titulo:'Wi-fi plus',
+  descricao:'Maior alcance e sinal mais potente na empresa toda com mais performamance e menos interferência.',
   icon:<Rocket/>,
 },
 {
-  titulo:'Suporte Local',
-  descricao:'Equipes locais para necessidades da sua região.',
+  titulo:'Gestor online',
+  descricao:'Gerencie os celulares da sua empresa a qualquer hora e lugar.',
   icon:<UserCog/>,
 },
 {
@@ -22,14 +22,14 @@ const Beneficios = [
   icon:<Headset/>,
 },
 {
-  titulo:'Apoio Ecológico',
-  descricao:'Iniciativas para reduzir o impacto ambiental.',
-  icon:<Sprout/>,
+  titulo:'Passaporte',
+  descricao:'Para falar e nevegar no exterior como se estivesse no Brasil.',
+  icon:<Plane/>,
 },
 {
-  titulo:'Vivo Valoriza',
-  descricao:'Programa de benefícios para clientes Vivo Empresas.',
-  icon:<HandCoins/>,
+  titulo:'Proteção Digital',
+  descricao:'Uma solução completa de proteção digital para os dispositivos da sua empresa.',
+  icon:<Shield/>,
 },
 ]
 
