@@ -1,34 +1,28 @@
 const PricesFibra= [ 
   {
    Plano: 'Claro Fibra',
-   Megas: '300',
+   Megas: '600',
    Bytes: 'Megas',
-   Preco:'99,99', 
+   Preco:'59,90', 
  },
   {
    Plano: 'Claro Fibra',
-   Megas: '400',
+   Megas: '600',
    Bytes: 'Megas',
-   Preco:'109,99', 
+   Preco:'59,90', 
  },
   {
    Plano: 'Claro Fibra',
-   Megas: '500',
-   Bytes: 'Megas',
-   Preco:'119,99', 
- },
+   Megas: '600',
+   Bytes: 'Megas + 40GB de Megabônus',
+   Preco:'99,89', 
+ }, 
   {
    Plano: 'Claro Fibra',
-   Megas: '700',
-   Bytes: 'Megas',
-   Preco:'149,99', 
- },
-  {
-   Plano: 'Claro Fibra',
-   Megas: '1',
-   Bytes: 'Gigas',
-   Preco:'299,99', 
- },
+   Megas: '600',
+   Bytes: 'Megas + 40GB de Megabônus',
+   Preco:'109,89', 
+ }, 
  ]
  
  export default PricesFibra

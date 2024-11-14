@@ -19,17 +19,17 @@ function Perk({ image, title, desc, className, isExpanded, ...props }: PerkProps
         isExpanded
           ? 'basis-2/4 text-white saturate-100'
           : 'basis-1/4 text-transparent saturate-50',
-        'group relative h-[10rem] overflow-clip rounded-md transition-all duration-700 md:min-h-full',
+        'group relative h-[10rem] overflow-clip rounded-md transition-all duration-600 md:min-h-full',
         className,
       )}
     >
       {/* Title */}
-      <div className='absolute p-5 gap-4 bottom-0 z-20 h-fi flex justify-end flex-col'>
-        <p className="text-4xl transition-all delay-0 duration-0 ease-out group-hover:delay-150 group-hover:duration-300 group-hover:ease-in">
+      <div className='absolute p-5 gap-4 bottom-0 z-20 h-fit flex justify-end flex-col'>
+        <p className="text-4xl transition-all delay-0 duration-0 ease-out group-hover:delay-150 group-hover:duration-200 group-hover:ease-in">
           {title}
         </p>
         {/* Description */}
-        <p className="text-lg transition-all delay-0 duration-0 ease-out group-hover:delay-150 group-hover:duration-300 group-hover:ease-in">
+        <p className="text-lg transition-all delay-0 duration-0 ease-out group-hover:delay-150 group-hover:duration-200 group-hover:ease-in">
           {desc}
         </p>
       </div>

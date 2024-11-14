@@ -62,7 +62,7 @@ export function CardNavFibra() {
           <SwiperSlide className='cursor-grab active:cursor-grabbing w-fit h-fit flex flex-row justify-center mb-10 items-center'
           key={teste1.megas}>
             <div className='flex flex-col h-fit justify-between items-center border border-black gap-14 rounded-md w-full p-5'>
-              <div className='flex gap-3 w-full flex-col'>
+              <div className='flex gap-3 w-full h-fit flex-col'>
                   <p className='text-xs'>
                     {teste1.plano}
                   </p>
