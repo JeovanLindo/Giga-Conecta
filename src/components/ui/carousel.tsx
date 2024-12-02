@@ -28,14 +28,16 @@ export default function Carousel() {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="min-h-[18rem] flex w-full lg:min-h-[20rem]"
+      className="min-h-fit flex w-full"
     >
-      <SwiperSlide className="relative min-h-[18rem] lg:min-h-[20rem]">
-        <div className="min-h-[18rem] bg-no-repeat bg-cover bg-[url('/carousel/banner-1.jpg')] bg-bottom lg:min-h-[20rem]"></div>
+      <SwiperSlide className="relative h-fit">
+      <img className='hidden lg:block' src="/carousel/1.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" />
+      <img className='block lg:hidden w-full' src="/carousel/mobile/1Mobile.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" />
       </SwiperSlide>
 
-      <SwiperSlide className="relative min-h-[18rem] lg:min-h-[20rem]">
-        <div className="min-h-[18rem] bg-no-repeat bg-cover bg-[url('/carousel/Banner-2.jpg')] bg-bottom lg:min-h-[20rem]"></div>
+      <SwiperSlide className="relative h-fit">
+        <img className='hidden lg:block' src="/carousel/2.jpeg" alt="banner com informações do plano claro pós de 30 gigas por 59,90 reais" />
+        <img className='block lg:hidden w-full' src="/carousel/mobile/2Mobile.jpeg" alt="banner com informações do plano claro pós de 30 gigas por 59,90 reais" />
       </SwiperSlide>
     </Swiper>
   )

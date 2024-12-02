@@ -14,11 +14,6 @@ const PricesMovel = [
     Gigas: '45',
     Preco:'59,99', 
   },
-    {
-      Plano: 'Plano de Celular',
-      Gigas: '45',
-      Preco:'59,99', 
-    },
  ]
  
  export default PricesMovel

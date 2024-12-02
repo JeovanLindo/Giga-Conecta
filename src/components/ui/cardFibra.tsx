@@ -48,18 +48,18 @@ export function CardNavFibra() {
             spaceBetween: 18,
           },
           '1520': {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           '1920': {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
         modules={[Pagination]}
       >
         {teste.map((teste1)=>(
-          <SwiperSlide className='cursor-grab active:cursor-grabbing w-fit h-fit flex flex-row justify-center mb-10 items-center'
+          <SwiperSlide className='w-fit h-fit flex flex-row justify-center mb-10 items-center'
           key={teste1.megas}>
             <div className='flex flex-col h-fit justify-between items-center border border-black gap-14 rounded-md w-full p-5'>
               <div className='flex gap-3 w-full h-fit flex-col'>
@@ -80,8 +80,8 @@ export function CardNavFibra() {
               <p className='border-y border-black w-full py-1 text-center'>Apps ilimitados</p>
 
               <div className='flex w-full flex-col'>
-                <p className='text-sm'>Po apenas:</p>
-                <p className='text-lg justify-center w-full'>R$ {teste1.preco}/Mês</p>
+                <p className='text-lg'>Por apenas:</p>
+                <p className='text-2xl justify-center w-full'>R$ {teste1.preco}/Mês</p>
               </div>
               <Button className='w-full'>
                 <a href="">Contratar serviço fibra</a>
