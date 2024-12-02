@@ -62,7 +62,7 @@ export function CardNavMovel() {
                   <p className='text-xs'>
                     {teste1.plano}
                   </p>
-                  <p className='text-3xl flex items-center gap-1'>
+                  <p className='text-5xl font-light flex items-center gap-1'>
                     <Smartphone/> {teste1.gigas} GB
                   </p>
               </div>
@@ -71,7 +71,7 @@ export function CardNavMovel() {
 
               <div className='flex w-full flex-col'>
                 <p className='text-lg'>Por apenas:</p>
-                <p className='text-2xl justify-center w-full'>R$ {teste1.preco}/Mês</p>
+                <p className='text-xl justify-center w-full'>R$ {teste1.preco}/Mês</p>
               </div>
               <Button className='w-full'>
                 <a href="">Contratar serviço fibra</a>

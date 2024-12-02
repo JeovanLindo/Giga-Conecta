@@ -31,13 +31,7 @@ export default function Carousel() {
       className="min-h-fit flex w-full"
     >
       <SwiperSlide className="relative h-fit">
-      <img className='hidden lg:block' src="/carousel/1.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" />
-      <img className='block lg:hidden w-full' src="/carousel/mobile/1Mobile.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" />
-      </SwiperSlide>
-
-      <SwiperSlide className="relative h-fit">
-        <img className='hidden lg:block' src="/carousel/2.jpeg" alt="banner com informações do plano claro pós de 30 gigas por 59,90 reais" />
-        <img className='block lg:hidden w-full' src="/carousel/mobile/2Mobile.jpeg" alt="banner com informações do plano claro pós de 30 gigas por 59,90 reais" />
+      <a href="" target='_blank'><img src="/carousel/1.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" /></a>
       </SwiperSlide>
     </Swiper>
   )

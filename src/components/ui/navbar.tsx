@@ -1,5 +1,5 @@
-import LogoBranca from '@/assets/LogoBranca.svg'
-import ClaroEmpresasLogo from '@/assets/ClaroEmpresas.webp'
+import LogoBranca from '@/assets/ConectaPretaAzul.svg'
+import GigaLogo from '@/assets/Logo.png'
 
 import { Button } from "@/components/ui/button"
 import {
@@ -30,20 +30,18 @@ const scrollToSection = (sectionId: string) => {
 
 export default function NavBar() {
   return (
-  <header className="sticky top-0 z-50 overflow-hidden flex justify-between font-inter items-center h-16 w-full bg-claroVermelho sm:px-32 px-4" >
+  <header className="sticky top-0 z-50 overflow-hidden flex justify-between font-inter items-center h-16 w-full bg-white sm:px-32 px-4" >
     
     <div className='flex flex-row items-center gap-16'>
-      <a href={'/'} className='flex flex-row items-center w-fit h-fit'>
-          <img className='w-40' src={LogoBranca} alt="Logo da SmartLagos roxa"/>
-          <img className='h-10' src={ClaroEmpresasLogo} alt="Logo da Vivo para empresas autorizadas" />
+      <a href={'/'} className='flex flex-row items-center w-fit h-fit gap-3'>
+          <img className='w-32' src={LogoBranca} alt="Logo da SmartLagos roxa"/>
+          <img className='h-5' src={GigaLogo} alt="Logo da Vivo para empresas autorizadas" />
       </a>
       <div className='hidden lg:flex flex-row gap-4' >
-          <nav className='flex flex-row gap-4 text-gray-50' >
-            <button onClick={()=> scrollToSection('servicesMovel')} className='hover:cursor-pointer hover:text-gray-200 transition-all'>Móvel</button>
-            <button onClick={()=> scrollToSection('beneficios')} className='hover:cursor-pointer hover:text-gray-200 transition-all'>soluções</button>
-            <button onClick={()=> scrollToSection('servicesFibra')} className='hover:cursor-pointer hover:text-gray-200 transition-all'>Internet</button>
-            <button onClick={()=> scrollToSection('beneficios')} className='hover:cursor-pointer hover:text-gray-200 transition-all'>Benefícios</button>
-            <button onClick={()=> scrollToSection('footer')} className='hover:cursor-pointer hover:text-gray-200 transition-all'>Contatos</button>
+          <nav className='flex flex-row gap-4 text-gray-950' >
+            <button onClick={()=> scrollToSection('beneficios')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Soluções</button>
+            <button onClick={()=> scrollToSection('servicesFibra')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Internet</button>
+            <button onClick={()=> scrollToSection('footer')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Contatos</button>
           </nav>
       </div>
     </div>

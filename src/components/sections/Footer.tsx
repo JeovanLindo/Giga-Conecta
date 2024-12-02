@@ -1,5 +1,5 @@
-import LogoBranca from '@/assets/ConectaBranca.svg'
-import LogoVivoEmpresas from '@/assets/ClaroEmpresas.webp'
+import LogoBranca from '@/assets/ConectaPretaAzul.svg'
+import LogoVivoEmpresas from '@/assets/Logo.png'
 
 export default function Footer ({ id }: { id: string }){
 
@@ -13,12 +13,12 @@ export default function Footer ({ id }: { id: string }){
         <div className='flex-col gap-1 flex justify-center items-center'>
             <img className='w-fit' src={LogoBranca} alt="Logo da SmartLagos branca" />
             <div className='flex flex-row justify-center items-center space-x-1'>
-              <p className='text-white' >Parceiro autorizado</p>
+              <p className='text-gray-900' >Parceiro autorizado</p>
               <img className='w-12' src={LogoVivoEmpresas} alt="Logo da Vivo para empresas autorizadas" />
             </div>
           </div>
 
-          <div className='flex flex-col gap-6 text-white items-center' >
+          <div className='flex flex-col gap-6 text-gigaAzul items-center' >
             <h2 className='text-xl font-medium' >
               Central de vendas
             </h2>
@@ -29,25 +29,12 @@ export default function Footer ({ id }: { id: string }){
               </ul>
             </div>
             <div className='flex flex-col items-center max-w-96 gap-1'>
-              <ul className='text-center flex flex-col items-center'>
-                <li>
-                  <p className='opacity-90'>Vila da Penha-RJ</p>
-                </li>
-                <li><a className='hover:opacity-100 opacity-60 transition-all' target='blank' href='https://www.google.com.br/maps/search/Estrada+Padre+Roser,+n%C2%B042+-+Sala+1207+-+Edif%C3%ADcio+Punto+Offices+-+Vila+da+Penha+-+Rio+de+Janeiro+-RJ+CEP21220-560/@-22.8399001,-43.3144842,19z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D'>Estrada Padre Roser, n°42 - Sala 1207 - Edifício Punto Offices - Vila da Penha - Rio de Janeiro -RJ CEP21220-560</a></li>
-              </ul>
             </div>
           </div>
-          <div className='flex flex-col gap-6 text-white items-center' >
+          <div className='flex flex-col gap-6 text-gigaAzul items-center' >
             <h2 className='text-xl font-medium' >
               Contatos
             </h2>
-            <div className='flex flex-col items-center gap-1 justify-center'>
-              <p className='opacity-90'>Cabo Frio-RJ</p>
-              <ul className='flex flex-col'>
-                <li><a target='_blank' className='hover:opacity-100 opacity-60 transition-all' href='https://wa.me/5522999682404?text=Ol%C3%A1,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20SmartLagos.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20dispon%C3%ADveis%20e%20como%20posso%20me%20tornar%20um%20cliente.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!'>(22) 99968-2404</a></li>
-                <li><a target='_blank' className='hover:opacity-100 opacity-60 transition-all' href='https://wa.me/552230315505?text=Ol%C3%A1,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20SmartLagos.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20dispon%C3%ADveis%20e%20como%20posso%20me%20tornar%20um%20cliente.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!'>(22) 3031-5505</a></li>
-              </ul>
-            </div>
             <div className='flex flex-col items-center gap-1 justify-center'>
               <p className='opacity-90'>Vila da Penha-RJ</p>
               <ul className='flex flex-col'>
