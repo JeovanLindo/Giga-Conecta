@@ -52,7 +52,7 @@ export function CardNavFibra() {
             spaceBetween: 20,
           },
           '1920': {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
         }}
