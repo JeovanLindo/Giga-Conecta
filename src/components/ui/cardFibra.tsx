@@ -1,7 +1,7 @@
 import PricesFibra from '@/lib/pricesfibra'
 import { cn } from '@/lib/utils';
 
-import {CircleCheckBig, Wifi} from 'lucide-react'
+import {CircleCheckBig} from 'lucide-react'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
