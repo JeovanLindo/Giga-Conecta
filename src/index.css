@@ -4,7 +4,7 @@
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: var(--swiper-pagination-color, #DC461A);
+  background: var(--swiper-pagination-color, #172E80);
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {

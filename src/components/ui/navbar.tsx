@@ -30,7 +30,7 @@ const scrollToSection = (sectionId: string) => {
 
 export default function NavBar() {
   return (
-  <header className="sticky top-0 z-50 overflow-hidden flex justify-between font-inter items-center h-16 w-full bg-white sm:px-32 px-4" >
+  <header className="sticky top-0 z-50 overflow-hidden flex justify-between font-inter items-center h-16 w-full bg-slate-100 sm:px-32 px-4" >
     
     <div className='flex flex-row items-center gap-16'>
       <a href={'/'} className='flex flex-row items-center w-fit h-fit gap-3'>

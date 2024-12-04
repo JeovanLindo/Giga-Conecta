@@ -1,7 +1,7 @@
 import PricesFibra from '@/lib/pricesfibra'
 import { cn } from '@/lib/utils';
 
-import {Wifi} from 'lucide-react'
+import {CircleCheckBig, Wifi} from 'lucide-react'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,15 +14,15 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Button } from './button';
 
-
 const teste = PricesFibra.map((price)=> {
   return {
     plano: price.Plano,
     megas: price.Megas,
     preco: price.Preco,
     bytes: price.Bytes,
+    beneficios: price.Beneficios
   }
-})
+})                     
 
 export function CardNavFibra() {
   return (
@@ -43,8 +43,8 @@ export function CardNavFibra() {
             slidesPerView: 2,
             spaceBetween: 14,
           },
-          '1024': {
-            slidesPerView: 3,
+          '1180': {
+            slidesPerView: 2,
             spaceBetween: 18,
           },
           '1520': {
@@ -59,31 +59,39 @@ export function CardNavFibra() {
         modules={[Pagination]}
       >
         {teste.map((teste1)=>(
-          <SwiperSlide className='w-fit h-fit flex flex-row justify-center mb-10 items-center'
+          <SwiperSlide className='w-fit h-fit flex flex-row justify-center max-w-72 mb-10 items-center'
           key={teste1.megas}>
-            <div className='flex flex-col h-fit justify-between items-center border border-black gap-14 rounded-md w-full p-5'>
-              <div className='flex gap-3 w-full h-fit flex-col'>
-                  <p className='text-xs'>
-                    {teste1.plano}
-                  </p>
-                  <p className={cn('hidden' ,teste1.bytes === 'Megas' && 'text-3xl flex items-center gap-1',
+            <div className='flex flex-col h-fit justify-between items-center border border-gigaAzul gap-8 rounded-md w-full p-5'>
+              <div className='flex gap-3 w-full items-center justify-center h-fit flex-col'>
+                  <p className={cn('hidden' ,teste1.bytes === 'Megas' && 'text-4xl font-bold text-gigaAzul flex items-center gap-1',
                     teste1.bytes === 'Megas'
                   )}>
-                    <Wifi/> {teste1.megas} Megas
+                   {teste1.megas} MEGA
                   </p>
-                  <p className={cn('hidden',teste1.bytes === 'Gigas' && 'text-3xl flex items-center gap-1'
+                  <p className={cn('hidden',teste1.bytes === '' && 'text-4xl font-bold text-gigaAzul flex items-center gap-1'
                   )}>
-                    <Wifi/> {teste1.megas} GB
+                   {teste1.megas}
                   </p>
               </div>
-
-              <p className='border-y border-black w-full py-1 text-center'>Apps ilimitados</p>
 
               <div className='flex w-full flex-col'>
-                <p className='text-lg'>Por apenas:</p>
-                <p className='text-2xl justify-center w-full'>R$ {teste1.preco}/Mês</p>
+                <p className='text-md text-gigaAzul opacity-80 flex gap-1 flex-row'><p>{teste1.plano}</p> por apenas:</p>
+                <p className='text-3xl text-gigaAzul justify-start w-full font-medium flex flex-row items-end'>R$ {teste1.preco}<p className='font-normal text-base'>/Mês</p></p>
               </div>
-              <Button className='w-full'>
+
+              <div className='w-full flex gap-3 flex-col'>
+                <h1 className='font-normal text-gigaAzul' >Benefícios</h1>   
+                <ul >{Object.values(teste1.beneficios).map((beneficio, index) => (
+                  <li key={index} className='text-md items-center flex flex-row gap-1
+                   opacity-80 text-gigaAzul'>
+                   <CircleCheckBig className='w-4'/> {beneficio}
+                  </li>
+                ))}
+                </ul>
+                
+              </div>
+
+              <Button variant={'outline'} className='w-fit'>
                 <a href="">Contratar serviço fibra</a>
               </Button>
             </div>

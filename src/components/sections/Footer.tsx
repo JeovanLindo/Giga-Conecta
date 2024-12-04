@@ -5,7 +5,7 @@ export default function Footer ({ id }: { id: string }){
 
   return(
     <>
-    <footer id={id} className="bg-claroVermelho font-inter md:px-32 flex-col flex justify-between items-center w-full py-10 px-10 h-fit min-h-44">
+    <footer id={id} className="bg-slate-100 font-inter md:px-32 flex-col flex border-t-2 border-gigaAzul justify-between items-center w-full py-10 px-10 h-fit min-h-44">
       <div className='lg:flex-row flex-col flex gap-12 items-center justify-between w-full' >
   
         <div className='flex flex-col justify-between lg:flex-row gap-8 w-full'>
@@ -46,9 +46,9 @@ export default function Footer ({ id }: { id: string }){
         </div>
       </div>
     </footer>    
-    <div className='w-full bg-claroVermelho border-t-[1px] border-gray-400 text-white h-fit py-1 flex md:flex-row flex-col md:gap-3 gap-1 justify-center items-center'>
-        <p className='opacity-60'>Made by <a className='hover:opacity-100 opacity-80 transition-all' target='_blank' href="https://www.instagram.com/agenciawrdigital/">WR Digital</a></p>
-        <p className='opacity-60'>Developed by <a className='hover:opacity-100 opacity-80 transition-all' target='_blank' href="https://www.behance.net/jeovanjnior/projects">Jeovan Lindo</a></p>
+    <div className='w-full bg-slate-100 border-t-[1px] border-gigaAzul text-gigaAzul h-fit py-1 flex md:flex-row flex-col md:gap-3 gap-1 justify-center items-center'>
+        <p className='opacity-80'>Made by <a className='hover:opacity-100 opacity-80 transition-all' target='_blank' href="https://www.instagram.com/agenciawrdigital/">WR Digital</a></p>
+        <p className='opacity-80'>Developed by <a className='hover:opacity-100 opacity-80 transition-all' target='_blank' href="https://www.behance.net/jeovanjnior/projects">Jeovan Lindo</a></p>
     </div>
     </>
   )
