@@ -49,18 +49,18 @@ function Perk({ image, title, desc, className, isExpanded, ...props }: PerkProps
 const perkList = [
   {
     image: image1,
-    title: 'Microsoft 365',
-    desc: 'Otimize a produtividade da sua equipe com ferramentas online colaborativas Microsoft.',
+    title: 'Power wi-fi',
+    desc: 'Conecte vários dispositivos com internet wifi residencial mais potente.',
   },
   {
     image: image2,
-    title: 'Wi-fi Mesh',
-    desc: 'Amplie a cobertura do sinal do wi-fi  na sua empresa com os nossos Extensores Wi-Fi Mesh.',
+    title: 'Internet para jogar',
+    desc: 'baixe um jogo de 10GB em menos de 2 minutos com a velocidade Giga.',
   },
   {
     image: image3,
-    title: 'Claro Clube',
-    desc: 'O programa de benefícios para sua empresa, você e seus colaboradores.',
+    title: 'Internet fibra óptica',
+    desc: 'Maratone filmes e séries com mais velocidade e estabilidade.',
   },
 ]
 
