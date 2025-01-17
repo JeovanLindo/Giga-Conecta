@@ -28,10 +28,10 @@ export default function Carousel() {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="min-h-fit flex w-full"
+      className="md:h-fit flex md:w-full h-80"
     >
-      <SwiperSlide className="relative h-fit">
-      <a href="" target='_blank'><img src="/carousel/1.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" /></a>
+      <SwiperSlide className="relative md:h-fit h-full">
+      <a href="" className='h-full ' target='_blank'><img className='min-h-full object-cover ' src="/carousel/1.jpeg" alt="banner com informações do plano claro de 600 megas por 59,90 reais" /></a>
       </SwiperSlide>
     </Swiper>
   )

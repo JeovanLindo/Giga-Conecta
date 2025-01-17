@@ -1,5 +1,4 @@
 import PricesFibra from '@/lib/pricesfibra'
-import { cn } from '@/lib/utils';
 
 import {CircleCheckBig} from 'lucide-react'
 
@@ -29,48 +28,47 @@ export function CardNavFibra() {
     <Swiper
         className=''
         slidesPerView={1}
-        spaceBetween={8}
+        spaceBetween={14}
         pagination={{
           clickable: true,
           dynamicBullets: true
         }}
         breakpoints={{
-         '640': {
-            slidesPerView: 1,
-            spaceBetween: 5,
-          },
-          '768': {
+         640: {
             slidesPerView: 2,
             spaceBetween: 14,
           },
-          '1180': {
+          768: {
             slidesPerView: 2,
-            spaceBetween: 18,
+            spaceBetween: 14,
           },
-          '1520': {
+          850: {
             slidesPerView: 3,
+            spaceBetween: 14,
+          },
+          1180: {
+            slidesPerView: 4,
             spaceBetween: 20,
           },
-          '1920': {
-            slidesPerView: 3,
+          1520: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1920: {
+            slidesPerGroup: 4,
             spaceBetween: 20,
           },
         }}
         modules={[Pagination]}
       >
-        {teste.map((teste1)=>(
-          <SwiperSlide className='w-fit h-fit flex flex-row justify-center max-w-72 mb-10 items-center'
-          key={teste1.megas}>
+        {teste.map((teste1, index)=>(
+          <SwiperSlide className=' h-fit flex flex-row justify-center w-72 mb-10 items-center'
+          key={index}>
             <div className='flex flex-col h-fit justify-between items-center border border-gigaAzul gap-8 rounded-md w-full p-5'>
               <div className='flex gap-3 w-full items-center justify-center h-fit flex-col'>
-                  <p className={cn('hidden' ,teste1.bytes === 'Megas' && 'text-4xl font-bold text-gigaAzul flex items-center gap-1',
-                    teste1.bytes === 'Megas'
-                  )}>
-                   {teste1.megas} MEGA
-                  </p>
-                  <p className={cn('hidden',teste1.bytes === '' && 'text-4xl font-bold text-gigaAzul flex items-center gap-1'
-                  )}>
+                  <p className='text-4xl font-bold text-gigaAzul flex items-center gap-1'>
                    {teste1.megas}
+                   {teste1.bytes === 'megas' ? ' MEGA' : '' }
                   </p>
               </div>
 
@@ -92,7 +90,7 @@ export function CardNavFibra() {
               </div>
 
               <Button variant={'outline'} className='w-fit'>
-                <a href="">Contratar serviço fibra</a>
+                <a target='_blank' href={`https://wa.me/5521991041111?text=Ol%C3%A1,%20quero%20ser%20um%20cliente%20da%20Conecta%20Giga%20e%20me%20interessei%20pelo%20plano%20de%20${teste1.megas}%20Mega%20por%20${teste1.preco}%20!`}>Contratar serviço fibra</a>
               </Button>
             </div>
               

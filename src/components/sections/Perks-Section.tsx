@@ -73,13 +73,13 @@ export default function PerksSection({ id }: { id: string }) {
   return (
     <section id={id} className='dark:bg-zinc-900 bg-gray-100' >
       <Container className="space-y-8 py-12 bg-gray-100">
-        <div className="flex flex-col items-end justify-start gap-4 lg:flex-row">
+        <div className="flex flex-col items-start justify-start gap-4 lg:flex-row">
           {/* Title */}
           <div className="space-y-2">
             {/* <h4 className="w-full text-center tracking-wider text-slate-400 lg:text-left">
               Customization
             </h4> */}
-            <h3 className="max-w-sm text-center font-alt text-4xl font-bold text-claroVermelho  md:text-start">
+            <h3 className="max-w-sm font-alt text-4xl font-bold text-claroVermelho text-start">
               Soluções digitais
             </h3>
           </div>

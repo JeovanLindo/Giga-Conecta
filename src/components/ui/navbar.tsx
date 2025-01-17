@@ -39,7 +39,7 @@ export default function NavBar() {
       </a>
       <div className='hidden lg:flex flex-row gap-4' >
           <nav className='flex flex-row gap-4 text-gray-950' >
-            <button onClick={()=> scrollToSection('beneficios')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Soluções</button>
+            <button onClick={()=> scrollToSection('perks')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Soluções</button>
             <button onClick={()=> scrollToSection('servicesFibra')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Internet</button>
             <button onClick={()=> scrollToSection('footer')} className='hover:cursor-pointer hover:text-[#172E80] transition-all'>Contatos</button>
           </nav>
@@ -89,7 +89,7 @@ export default function NavBar() {
           </div>
           <Button
             asChild>
-            <a target='_blank' href=''>Contrate</a>
+            <a target='_blank' href='https://wa.me/21991041111?text=Ol%C3%A1,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20ConectaGiga.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20dispon%C3%ADveis%20e%20como%20posso%20me%20tornar%20um%20cliente.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!'>Contrate</a>
           </Button>
         </SheetHeader>
       </SheetContent>
@@ -99,7 +99,7 @@ export default function NavBar() {
     <Button
     className='hidden lg:flex'
     >
-      <a href="" target='_blank'>Contrate</a>
+      <a href="https://wa.me/21991041111?text=Ol%C3%A1,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20ConectaGiga.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20dispon%C3%ADveis%20e%20como%20posso%20me%20tornar%20um%20cliente.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!" target='_blank'>Contrate</a>
     </Button>
   </header> 
   )
