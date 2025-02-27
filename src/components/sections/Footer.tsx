@@ -25,7 +25,7 @@ export default function Footer ({ id }: { id: string }){
             <div className='flex flex-col items-center max-w-96 gap-1'>
               <ul className='text-center flex flex-col items-center'>
                 <li><p className='opacity-90'>Centro-RJ</p></li>
-                <li><a className='hover:opacity-100 opacity-60 transition-all' target='blank' href='https://maps.app.goo.gl/11BpsnHrs1boX6d19'>Av. Rio Branco, 156, Sala 2814, Centro da cidade, Rio de Janeiro</a></li>
+                <li><a className='hover:opacity-100 opacity-60 transition-all' target='blank' href='https://maps.app.goo.gl/FZHGHd6DJ5Uk6EFTA'>Av. das Américas, 19005 - Recreio dos Bandeirantes, Rio de Janeiro - RJ, 22790-703 - Absolutto Business Towers torre 1, sala 1219</a></li>
               </ul>
             </div>
             <div className='flex flex-col items-center max-w-96 gap-1'>
@@ -39,7 +39,7 @@ export default function Footer ({ id }: { id: string }){
               <p className='opacity-90'>Centro-RJ</p>
               <ul className='flex flex-col'>
                 <li><a target='_blank' className='hover:opacity-100 opacity-60 transition-all' href='https://wa.me/21991041111?text=Ol%C3%A1,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20ConectaGiga.%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20dispon%C3%ADveis%20e%20como%20posso%20me%20tornar%20um%20cliente.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!'>(21) 99104-1111</a></li>
-                <li><a target='_blank' className='opacity-60 transition-all'>08000006030</a></li>
+                <li><a target='_blank' className='opacity-60 transition-all'>0800 000 6030</a></li>
               </ul>
             </div>
           </div>
